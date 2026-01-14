@@ -7,15 +7,27 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: "Rubik", sans-serif;
-    background-color: #fedaffa1;
+    background-color: #fedaff6f;
 }
 
 /* ---------- Header Setup ----------*/
 .navbar{
     display: flex;
-    background-color: rgb(163, 163, 163);
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: rgba(55, 124, 167, 0.767);
+    width: 100vw;
+    z-index: 1;
     border-bottom: 5px solid rgba(0, 0, 0, 0.837);
+    align-items: center;
+}
+
+.logoContainer{
+    display: flex;
+    background-color: transparent;
+    margin-left: 25px;
 }
 
 .logo{
@@ -42,5 +54,37 @@
     font-weight: 800;
     font-size: 40px;
     letter-spacing: 2px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    list-style: none;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+.navigation li{
+    background-color: transparent;
+}
+
+.navigation li a{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 26px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.navigation li a:hover{
+    color: #f12237;
 }
