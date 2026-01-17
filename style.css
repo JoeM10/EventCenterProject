@@ -7,9 +7,12 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: "Rubik", sans-serif;
-    background-color: #fedaff6f;
+    background: none;
 }
 
+html{
+    background-color: #fedaff6f;
+}
 /* ---------- Header Setup ----------*/
 .navbar{
     display: flex;
@@ -17,17 +20,14 @@
     top: 0;
     left: 0;
     justify-content: space-between;
-    background-color: rgba(55, 124, 167, 0.767);
     background: linear-gradient(to bottom, rgba(16, 82, 239, 0.75) 0%, rgba(52, 52, 52, 0.15) 90%);
     width: 100vw;
     z-index: 1;
-    
     align-items: center;
 }
 
 .logoContainer{
     display: flex;
-    background-color: transparent;
     margin-left: 25px;
 }
 
@@ -35,7 +35,6 @@
     display: flex;
     width: 80px;
     height: 80px;
-    background-color: transparent;
 }
 
 .headerIndexTag{
@@ -43,7 +42,7 @@
     letter-spacing: 2px;
     text-decoration: none;
     color: whitesmoke;
-    background-color: transparent;
+    background: none;
     font-size: 25px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -52,7 +51,6 @@
     margin-bottom: -10px;
     display: flex;
     color: #f12237;
-    background-color: transparent;
     font-family: "Kanit", sans-serif;
     font-weight: 800;
     font-size: 40px;
@@ -62,7 +60,6 @@
 .listContainer{
     display: flex;
     justify-content: center;
-    background-color: transparent;
 }
 
 .navigation{
@@ -70,19 +67,13 @@
     justify-content: space-evenly;
     width: 100%;
     align-items: center;
-    background-color: transparent;
     list-style: none;
     gap: 25px;
     margin-right: 50px;
 }
 
-.navigation li{
-    background-color: transparent;
-}
-
 .navigation li a{
     text-decoration: none;
-    background-color: transparent;
     font-size: 26px;
     word-spacing: 20px;
     font-family: "Kanit", sans-serif;
@@ -95,9 +86,96 @@
     text-shadow: none;
     font-weight: 500;
     color: gray;
-    background: none;
 }
 
 .navigation li a:hover{
     color: #f12237;
+}
+
+/* ---------- Hero Setup ----------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #44748a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroBackground{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.heroText{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 725px;
+    z-index: 1;
+    padding: 15px;
+    padding-left: 35px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background: linear-gradient(rgba(133, 133, 133, 0.851) 0%, rgba(83, 83, 83, 0.837) 90%);
+    border-radius: 50px;
+}
+
+.heroText h1{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.heroText h1 span{
+    color: #f12237;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    word-spacing: 10px;
+}
+
+.heroText p{
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.eventsButtonContainer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.eventsButton{
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 75px;
+}
+
+.eventsButton:hover{
+    box-shadow: inset 0 0 100px rgb(114, 114, 114);
+    background-color:rgba(35, 35, 175, 0.462);
+}
+
+.viewEvents{
+    color: whitesmoke;
+    margin-top: 38px;
+    margin-right: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.arrow{
+    width: 100px;
+    height: 100px;
+    background: #f12237;
+    border-radius: 100%;
 }
