@@ -247,3 +247,49 @@ html{
     font-size: 85px;
     line-height: 10px;
 }
+
+/* ---------- Index Reviews Section Setup ----------*/
+.reviewsSectionContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewTitle h2{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #464646;
+}
+
+.aboutButtonContainer{
+    display: flex;
+    margin-right: 5%;
+}
+
+.aboutButton{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 75px;
+}
+
+.aboutButton:hover{
+    box-shadow: inset 0 0 100px rgb(114, 114, 114);
+    background-color:rgba(35, 35, 175, 0.462);
+}
+
+.aboutButton h3{
+    color:#464646;
+    margin-right: 20px;
+}
+
+.reviewCardsContainer{
+    display: flexbox;
+    flex-wrap: wrap;
+}
