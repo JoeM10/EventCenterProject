@@ -12,7 +12,6 @@
 
 html{
     background-color: #fedaff6f;
-    display: flexbox;
 }
 /* ---------- Header Setup ----------*/
 .navbar{
@@ -53,7 +52,7 @@ html{
     display: flex;
     color: #f12237;
     font-family: "Kanit", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 40px;
     letter-spacing: 2px;
 }
@@ -102,6 +101,7 @@ html{
     background-color: #44748a;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 }
 
 .heroBackground{
@@ -252,23 +252,28 @@ html{
 .reviewsSectionContainer{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: #44748a;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 }
 
 .reviewTitle{
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .reviewTitle h2{
     display: flex;
     align-items: center;
     font-size: 50px;
-    color: #464646;
+    color: #efefef;
 }
 
 .aboutButtonContainer{
     display: flex;
-    margin-right: 5%;
 }
 
 .aboutButton{
@@ -285,11 +290,58 @@ html{
 }
 
 .aboutButton h3{
-    color:#464646;
+    color:#efefef;
     margin-right: 20px;
 }
 
 .reviewCardsContainer{
-    display: flexbox;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 25px;
+    gap: 50px;
+}
+
+.reviewCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 425px;
+    height: 650px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.721);
+}
+
+.customerImage{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: solid 8px rgb(195, 195, 195);
+}
+
+.reviewCard h4{
+    font-size: 25px;
+    color: #1e1e1e;
+    margin: 10px;
+}
+
+.reviewCard p{
+    font-size: 17px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+
+.reviewCard h5{
+    font-size: 25px;
+    background-color: #1a5a85a5;
+    padding: 10px;
+    padding-top: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
