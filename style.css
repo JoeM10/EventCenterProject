@@ -13,6 +13,7 @@ html{
     background-color: #fedaff6f;
     scroll-behavior: smooth;
 }
+
 /* ---------- Header Setup ----------*/
 .navbar{
     display: flex;
@@ -353,13 +354,15 @@ footer{
 
 .footerTextandLogoContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 35px;
 }
 
 .addressContainer{
     display: flex;
     flex-direction: column;
     justify-content: right;
+    margin-left: -50px;
 }
 
 .addressContainer h6{
@@ -376,7 +379,62 @@ footer{
     align-items: center;
 }
 
+.footerLogo{
+    width: 100px;
+    height: 100px;
+}
+
+.footerLogoContainer h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.footerLogoContainer h3 span{
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    color: #f12237;
+}
+
+.contactButtonContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contactButton{
+    background-color: #44748a;
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contactButton h3{
+    font-size: 20px;
+    color: #efefef;
+}
+
+.contactButton h3:hover{
+    color: #f12237;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .socialLink img{
     width: 24px;
     height: 24px;
+}
+
+.rightsReserved{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
