@@ -93,6 +93,98 @@ html{
     color: #f12237;
 }
 
+/* ---------- Footer Section Setup ----------*/
+footer{
+    width: 100%;
+}
+
+.footerTextandLogoContainer{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.addressContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: -50px;
+}
+
+.addressContainer h6{
+    font-size: 20px;
+    text-align: right;
+}
+
+.addressContainer p{
+    text-align: right;
+}
+
+.footerLogoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo{
+    width: 100px;
+    height: 100px;
+}
+
+.footerLogoContainer h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.footerLogoContainer h3 span{
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    color: #f12237;
+}
+
+.contactButtonContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contactButton{
+    background-color: #44748a;
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contactButton h3{
+    font-size: 20px;
+    color: #efefef;
+}
+
+.contactButton h3:hover{
+    color: #f12237;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.socialLink img{
+    width: 24px;
+    height: 24px;
+}
+
+.rightsReserved{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
 /* ---------- Index Hero Setup ----------*/
 .hero{
     width: 100%;
@@ -125,8 +217,8 @@ html{
     padding-left: 35px;
     margin-left: 5%;
     margin-bottom: 5%;
-    background: linear-gradient(rgba(133, 133, 133, 0.851) 0%, rgba(83, 83, 83, 0.837) 90%);
     border-radius: 50px;
+    background: #1a1a1a5c;
 }
 
 .heroText h1{
@@ -137,6 +229,8 @@ html{
 }
 
 .heroText h1 span{
+    font-family: "Kanit", sans-serif;
+    line-height: 0px;
     color: #f12237;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     word-spacing: 10px;
@@ -347,94 +441,153 @@ html{
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* ---------- Footer Section Setup ----------*/
-footer{
+/* ---------- About Main Section Setup ----------*/
+.aboutMain{
     width: 100%;
-}
-
-.footerTextandLogoContainer{
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-}
-
-.addressContainer{
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    margin-left: -50px;
+    justify-content: center;
+    background:#f12237 ;
 }
 
-.addressContainer h6{
-    font-size: 20px;
-    text-align: right;
-}
-
-.addressContainer p{
-    text-align: right;
-}
-
-.footerLogoContainer{
+.aboutIntro{
     display: flex;
-    align-items: center;
-}
-
-.footerLogo{
-    width: 100px;
-    height: 100px;
-}
-
-.footerLogoContainer h3{
-    font-size: 25px;
-    font-weight: 500;
-    color: #1e1e1e;
-}
-
-.footerLogoContainer h3 span{
-    font-family: "Kanit", sans-serif;
-    font-size: 40px;
-    line-height: 10px;
-    letter-spacing: 1px;
-    color: #f12237;
-}
-
-.contactButtonContainer{
-    display: flex;
+    flex-direction: column;
     justify-content: left;
-    align-items: center;
+    width: 100%;
+    height: 450px;
+    background: #000;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.contactButton{
-    background-color: #44748a;
-    border-radius: 25px;
-    padding: 15px;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.aboutIntro h2{
+    padding: 25px;
+    padding-top: 150px;
+    padding-left: 65px;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #efefef;
+    z-index: 1;
 }
 
-.contactButton h3{
+.aboutIntro p{
+    width: 700px;
+    font-size: 25px;
+    padding-left: 65px;
+    color: #efefef;
+    z-index: 1;
+}
+
+.aboutBackground{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 450px;
+    object-fit:cover;
+    opacity: 0.65;
+    z-index: 0;
+}
+
+/* ---------- About Admin Section Setup ----------*/
+.adminStaff{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 65px;
+}
+
+.adminStaff h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.adminCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 50px;
+}
+
+.adminCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 600px;
+    overflow: hidden;
+}
+
+.adminImage{
+    width: 600px;
+    height: 600px;
+}
+
+.adminCard h4{
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.adminCard p{
+    margin-top: 15px;
     font-size: 20px;
     color: #efefef;
 }
 
-.contactButton h3:hover{
-    color: #f12237;
-}
-
-.socialLinks{
+/* ---------- About Coordinator Section Setup ----------*/
+.coordinationStaff{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 65px;
+    background:#44748a;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.socialLink img{
-    width: 24px;
-    height: 24px;
-}
-
-.rightsReserved{
+.coordinationStaff h3{
     display: flex;
-    justify-content: center;
-    padding: 5px;
+    justify-content: right;
+    color: #efefef;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.coordinatorCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.coordinatorCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 600px;
+    overflow: hidden;
+}
+
+.coordinatorImage{
+    width: 600px;
+    height: 600px;
+}
+
+.coordinatorCard h4{
+    font-size: 35px;
+    color: #efefef;
+    margin-top: 15px;
+}
+
+.coordinatorCard p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000000;
 }
