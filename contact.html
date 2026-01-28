@@ -29,6 +29,109 @@
         </header>
 
 
+        <main class="contactMain">
+            <div class="contactIntro">
+                <img src="images/Backgrounds/contactBackground.png" class="contactBackground" alt="" />
+                <h1>Book Your Event</h1>
+            </div>
+            <form class="bookingForm" action="#" method="post">
+                <h2 class="formTitle">BOOKING REQUEST</h2>
+                <div class="contactInfo">
+                    <h3 class="sectionTitle">Contact Info<span>*</span></h3>
+                    <div class="gridTop">
+                        <div class="field">
+                            <label for="fullName">First & Last Name</label>
+                            <input id="fullName" name="fullName" type="text" required />
+                        </div>
+                        <div class="field">
+                            <label for="companyOrg">Company/Organization</label>
+                            <input id="companyOrg" name="companyOrg" type="text" required />
+                        </div>
+                    </div>
+                    <div class="gridBot">
+                        <div class="field">
+                            <label for="phone">Phone #</label>
+                            <input id="phone" name="phone" type="text" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="text" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="preferredDates">
+                    <h3 class="sectionTitle">Preferred Event Dates<span>*</span></h3>
+                    <div class="field">
+                        <label for="prefStartDate">Preferred Start Date</label>
+                        <input class="dateBox" id="prefStartDate" name="prefStartDate" type="date" required />
+                    </div>
+                    <div class="field">
+                        <label for="prefEndDate">Preferred End Date</label>
+                        <input class="dateBox" id="prefEndDate" name="prefEndDate" type="date" required />
+                    </div>
+                </div>
+                <div class="altDates">
+                    <h3 class="sectionTitle">Alternate Event Dates</h3>
+                    <div class="field">
+                        <label for="altStartDate">Alternate Start Date</label>
+                        <input class="dateBox" id="altStartDate" name="altStartDate" type="date" />
+                    </div>
+                    <div class="field">
+                        <label for="altEndDate">Alternate End Date</label>
+                        <input class="dateBox" id="altEndDate" name="altEndDate" type="date" />
+                    </div>
+                </div>
+                <div class="eventInfo">
+                    <h3 class="sectionTitle">Event Information</h3>
+                    <div class="attendanceContainer">
+                        <div class="field">
+                            <label for="minAttend">Min Expected Attendance</label>
+                            <select id="minAttend" name="minAttend">
+                                <option>10</option>
+                                <option>50</option>
+                                <option>75</option>
+                                <option>100</option>
+                                <option>150</option>
+                                <option>250</option>
+                                <option>300</option>
+                                <option>350</option>
+                                <option>more</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="maxAttend">Max Expected Attendance</label>
+                            <select id="maxAttend" name="maxAttend">
+                                <option>10</option>
+                                <option>50</option>
+                                <option>75</option>
+                                <option>100</option>
+                                <option>150</option>
+                                <option>250</option>
+                                <option>300</option>
+                                <option>350</option>
+                                <option>more</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="additionalRequests">
+                    <h3 class="sectionTitle">Additional Requests</h3>
+                    <div class="field">
+                        <textarea id="additionalRequests" name="additionalRequests" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="submitButtonContainer">
+                    <button type="submit" class="submitButton">Submit Request</button>
+                </div>
+            </form>
+            <div class="ourContactInfo">
+                <h2>Questions or Concerns</h2>
+                <h4><span>E-mail:</span> example@email.com</h4>
+                <h4><span>Phone:</span> (123)456-7890</h4>
+            </div>
+        </main>
+
+
         <footer>
             <div class="footerTextandLogoContainer">
                 <div class="addressContainer">
