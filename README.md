@@ -15,21 +15,20 @@ A multi-page, responsive marketing website for the Hibiscus Event Center. It is 
 - CSS
 
 ## Project Structure
-.
-├── index.html
-├── about.html
-├── events.html
-├── contact.html
-├── mockPage.html
-├── style.css
-└── images/
-    ├── Backgrounds/
-    ├── BuildingImages/
-    ├── Customers/
-    ├── Employees/
-    ├── Events/
-    └── FaviconandLogo/
-        └── SocialLogos/
+- index.html
+- about.html
+- events.html
+- contact.html
+- mockPage.html
+- style.css
+- images/
+- ^ Backgrounds/
+- | BuildingImages/
+- | Customers/
+- | Employees/
+- | Events/
+- | FaviconandLogo/
+-   ^ SocialLogos/
 
 ## License
 - MIT
