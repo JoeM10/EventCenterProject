@@ -61,6 +61,7 @@ html{
 .listContainer{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navigation{
@@ -501,7 +502,6 @@ footer{
 
 .adminStaff h3{
     display: flex;
-    flex-direction: column;
     font-size: 45px;
     font-weight: 500;
     margin-bottom: 50px;
@@ -672,6 +672,8 @@ footer{
 
 .pastEventsCardsContainer{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
 }
 
@@ -775,6 +777,7 @@ footer{
 
 .layoutImages{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -831,7 +834,7 @@ footer{
 
 .bookingForm{
     width: 80%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -881,11 +884,14 @@ footer{
     width: 45vh;
 }
 
-.gridTop{
-    display: flex;
-    gap: 20px;
+.gridTop .field input:focus,
+.gridBot .field input:focus {
+    background-color: white;
+    border-bottom: 3px solid #44748a;
+    border-radius: 3px;
 }
 
+.gridTop,
 .gridBot{
     display: flex;
     gap: 20px;
@@ -897,6 +903,11 @@ footer{
 
 .dateBox{
     width: 25vh;
+    cursor: pointer;
+}
+
+.attendBox{
+    cursor: pointer;
 }
 
 .field select{
@@ -904,7 +915,7 @@ footer{
 }
 
 .field textarea{
-    width: 70vh;
+    width: 70vw;
     background: #46464614;
     border-radius: 5px;
 }
@@ -945,4 +956,435 @@ footer{
     font-weight: 400;
     text-align: center;
     padding: 2px;
+}
+
+/* --------------- MEDIA STYLES ---------------*/
+
+/* ---------- Header ----------*/
+@media (max-width: 850px) {
+
+    .logoContainer{
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .logo{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .headerIndexTag{
+        margin: 0;
+        font-size: 3vw;
+        letter-spacing: 0;
+        line-height: 3.25vw;
+    }
+
+    .headerIndexTag span{
+        margin: 0;
+        font-size: 5vw;
+        line-height: 3.25vw;
+    }
+
+    .navigation{
+        gap: 5px;
+        margin-right: 20px;
+    }
+
+    .navigation li a{
+        font-size: 3vw;
+        word-spacing: 5px;
+    }
+}
+
+/* ---------- Footer ----------*/
+@media (max-width: 750px) {
+
+    .footerTextandLogoContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    .addressContainer{
+        margin: 0;
+    }
+
+    .addressContainer h6{
+        font-size: 2.75vw;
+    }
+
+    .addressContainer p{
+        font-size: 2.2vw;
+    }
+
+    .footerLogoContainer{
+        flex-direction: column;
+        padding: 5px;
+        padding-top: 0;
+    }
+
+    .footerLogo{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .footerLogoContainer h3{
+        font-size: 3vw;
+        line-height: 2.4vw;
+    }
+
+    .footerLogoContainer h3 span{
+        font-size: 5vw;
+        line-height: 0;
+        letter-spacing: 0;
+    }
+
+    .contactButton{
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .contactButton h3{
+        font-size: 14px;
+    }
+
+    .socialLink img{
+        width: 14px;
+        height: 14px;
+    }
+
+    .rightsReserved{
+        font-size: 2vw;
+    }
+}
+
+/* ---------- Index ----------*/
+@media (max-width: 1260px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .heroText,
+    .eventsButtonContainer{
+        position: relative;
+        margin: 0;
+    }
+
+    .heroText{
+        width: min(725px, 92vw);
+    }
+}
+
+@media (max-width: 1145px) {
+    .heroText h1, 
+    .heroText h1 span{
+        font-size: 7vw;
+    }
+
+    .heroText p{
+        font-size: 4vw;
+    }
+
+    .buildingLogoContainer{
+        width: 40vw;
+    }
+
+    .buildingImages{
+        width: 40vw;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .buildingImages img{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .buildingTextLogo{
+        width: 35%;
+        height: 35%;
+    }
+
+    .buildingLogoContainer h3{
+        font-size: 3vw;
+    }
+
+    .buildingLogoContainer h3 span{
+        font-size: 5vw;
+    }
+
+    .buildingDescriptionText h2{
+        font-size: 3vw;
+    }
+
+    .buildingDescriptionText p{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .reviewsSectionContainer{
+        align-items: center;
+    }
+
+    .reviewTitle, 
+    .reviewCardsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewCard{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 94vw;
+        max-width: 450px;
+        height: 100%;
+        border: 2px solid #44748a;
+        border-radius: 15px;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+    }
+    
+    .customerImage{
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .reviewCard p{
+        padding: 0;
+    }
+
+    .reviewCard h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        padding: 5px;
+    }
+}
+
+/* ---------- About ----------*/
+@media (max-width: 750px) {
+    .aboutIntro{
+        justify-content: center;
+        height: 250px;
+    }
+
+    .aboutIntro h2{
+        padding: 0;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        margin: 0;
+        font-size: 5.5vw;
+    }
+
+    .aboutIntro p{
+        width: 100%;
+        padding-left: 8vw;
+        font-size: 3vw;
+    }
+    
+    .aboutBackground{
+        height: 250px;
+    }
+
+    .adminStaff,
+    .coordinationStaff{
+        padding-left: 30px;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .adminStaff h3,
+    .coordinationStaff h3{
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+
+    .coordinationStaff h3{
+        margin-top: 20px;
+    }
+
+    .adminCard h4,
+    .coordinatorCard h4{
+        font-size: 4vw;
+    }
+
+    .adminCard p,
+    .coordinatorCard p{
+        font-size: 3vw;
+    }
+
+    .adminImage, 
+    .coordinatorImage{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .adminStaff,
+    .adminStaff h3,
+    .adminCardsContainer,
+    .coordinationStaff,
+    .coordinationStaff h3,
+    .coordinatorCardsContainer,
+    .coordinatorCard{
+        justify-content: center;
+    }
+}
+/* ---------- Events ----------*/
+@media (max-width: 1200px) {
+    .tableSection{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 930px) {
+    .tableSection{
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .eventsTable{
+        width: 92vw;
+    }
+
+    .eventsTable caption{
+        font-size: 5vw;
+    }
+
+    .eventsTable th{
+        font-size: 2.75vw;
+    }
+
+    .eventsTable tr td{
+        font-size: 1.9vw;
+    }
+
+    .eventsTable th,
+    .eventsTable tr td{
+        padding: 2px;
+    }
+
+    .layoutImages{
+        gap: 20px;
+    }
+
+    .layoutImageContainer{
+        width: 95vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .eventsIntro,
+    .eventBackgroundImage{
+        height: 250px;
+    }
+
+    .eventsIntro{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventsIntro h2{
+        margin: 0;
+        padding: 0;
+        font-size: 6vw;
+    }
+
+    .pastEventsSection h2{
+        padding: 20px;
+        font-size: 6vw;
+    }
+
+    .previousEventsContainer{
+        gap: 20px;
+    }
+
+    .previousEventsContainer h3{
+        width: 90vw;
+        margin: 0;
+        font-size: 4vw;
+    }
+    
+    .pastEventImage{
+        width: 92vw;
+    }
+
+    .layout{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .layout h2{
+        font-size: 5vw;
+        padding-bottom: 20px;
+    }
+}
+
+/* ---------- Contact ----------*/
+@media (max-width: 1400px) {
+    .contactMain{
+        width: 100%;
+    }
+
+    .bookingForm{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .gridTop,
+    .gridBot{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .contactIntro,
+    .contactBackground{
+        height: 250px;
+    }
+
+    .contactIntro{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactIntro h1{
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .sectionTitle{
+        font-size: 22px;
+    }
+
+    .field label{
+        font-size: 18px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea{
+        font-size: 14px;
+        width: 88vw;
+    }
+
+    .gridTop .field input,
+    .gridBot .field input{
+        width: 88vw;
+    }
+
+    .attendanceContainer{
+        flex-direction: column;
+    }
 }
